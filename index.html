@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet"> 
+      
+</head>
+<body id="body-day">
+    <header>
+        <div class="opening" id="opening">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <div class="intro">
+            <div class="logo">
+                <img src="assets2/gifOF_logo.png" alt="logoimg" id="logo">
+            </div class="navigation-block">
+                <nav id="navigation">
+                    <div>
+                        <ul>
+                            <li class="nav-button" id="button-navone"><a class="active" href="video.html">Crear Guifos</a></li>
+                            <li class="nav-button" id="button-navtwo"><a href="#title2">Elegir tema <span class="nav-button" id="arrow-down"><img src="assets2/dropdown.svg" alt="arrow-down"></span></a>
+                                <div class="dropdown-content">
+                                    <a onclick="sailorDay();" href="#hola1"><p id="sailor-day">Sailor Day</p></a>
+                                    <a onclick="sailorNight()" href="#hola2"><p id="sailor-night">Sailor Night</p></a>
+                                </div>   
+                            </li>
+                            <li id="text-nav"><button type="submit" id="my-gifs"><a><u>M</u>is Guifos</a></button></li>
+                        </ul>    
+                    </div>
+                </nav>
+        </div>
+    </header>
+    <body>
+        <div class="search-block">
+            <div class="intro-search" id="search-title">
+                <p>Buscar</p>
+            </div>
+            <div class="search-background"> 
+                <form id="search-form">
+                    <input id="search-input" name="busqueda" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" onkeyup="checkFilled(); checkFillednight()">
+                    <button type="submit" id="submit" name="search"><img src="assets2/lupa_inactive.svg" alt="lupa" id="lupa"> Buscar</button>
+                </form>   
+            </div>
+            <div class="search-related"> 
+                 <div class="button-related" id="button-related-top"><button class="related-text" type="submit">Dogs</button></div>
+                 <div class="button-related"><button class="related-text" type="submit">Cats</button></div>
+                 <div class="button-related"><button class="related-text" type="submit">Birds</button></div>
+            </div>
+        </div>
+        <div class="suggested">
+            <div class="first-section">
+                <p id="title-one">Hoy te sugerimos:</p>
+            </div> 
+            <div class="container">
+                <div id="results-trend" class="results-trend">
+                   
+                </div>
+                <div class="button-more-list">
+                    <button type="submit" class="submit-more" id="button-more1">Ver más...</button>
+                    <button type="submit" class="submit-more"id="button-more2">Ver más...</button>
+                    <button type="submit" class="submit-more" id="button-more3">Ver más...</button>
+                    <button type="submit" class="submit-more"id="button-more4">Ver más...</button>
+                </div>
+            </div>
+        </div> 
+            <div class="first-section">
+                <p id="title-two">Tendencias:</p>
+            </div> 
+            <div class="container">
+                <div id="results" class="results">
+    
+                </div>
+            </div>
+            
+        
+        <script src="scripts/myscript.js"></script>
+</body>
+</html>
+

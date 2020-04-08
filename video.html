@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/stylecreateguifo.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+<body id="body-day">
+    <main>
+            <div class="opening" id="opening">
+                <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+            </div>
+            <div class="intro">
+                <div class="logo">
+                    <a href="index.html" id="arrow"><img src="assets2/arrow.svg" alt="logoarrow" ></a>
+                    <img src="assets2/gifOF_logo.png" alt="logoimg" id="logo">
+                </div>
+            </div>
+            <div class="search-block" id="search">
+                <div class="intro-search" id="search-title">
+                    <p>Crear Guifos</p>
+                </div>
+                <div class="intro-text"> 
+                    <div class="window-intro">
+                        <img src="assets2/window img.png" alt="window-logo" id="window-logo">
+                        <h1>Aquí podrás crear tus propios guifos</h1>
+                    </div>
+                    <div class="window-content">  
+                        <p>Crear tu guifo es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                        <ol type = "2">
+                            <li>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                            <li>Capturar tu momento guifo</li>
+                            <li>Revisar el momento</li>
+                            <li>Listo para subir y compartir!</li>
+                        </ol>   
+                    <p>¿Quieres comenzar a crear tu guifo ahora?</p>
+                    <form class="button-camera">
+                        <button type="submit" id="cancel">Cancelar</button>
+                        <button  type="submit" id="begin" ><a href="#video" id="text-begin">Comenzar</a></button>
+                    </form>   
+                </div>  
+                </div>
+            </div>
+        </div>
+        <div class="block-video" id="block">
+            <div class="intro-search" id="search-title">
+                <p>Un Chequeo Antes de Empezar</p>
+            </div>
+            <div class="gif-creator">
+                <video controls id="video-stream"></video>
+            </div>
+            
+            <div id="capture">
+                <ul>
+                    <li class="button-record" id="button-navtwo">
+                        <a href="#title2" onclick="gifButton(); changeButton();" id="btn-stop-recording" disabled>
+                                <div class="button-content">
+                                    <img src="assets2/camera.svg" alt="arrow-down" id="img-logo" class="button-record-img" >
+                                 <div class="button-record-text" id="button-record-title">
+                                <p id="name-button">Captura</p>
+                                </div>   
+                                </div>  
+                        </a>
+                    </li>
+                </ul>  
+            </div>  
+            <form class="accept-button" id="button-upload">
+                <button type="submit" id="return"><a href="video.html" id="return-text">Repetir Captura</a></button>
+                <button type="submit" id="upload">Subir Guifo</button>
+            </form> 
+            <div class="timer"></div>     
+        </div>
+        </div> 
+        <div class="block-success">
+            <div class="intro-created">
+                <p>Guifo Subido Con Éxito</p>
+            </div>
+            <div id="results_last_guifo">
+
+            </div>
+            <div class="intro-text"> 
+                <div class="window-created">
+                    <h1>Guifo creado con éxito</h1>
+                </div>
+                <form class="button-created">
+                    <div class="first-buttons">
+                        <button type="submit" id="copy">Copiar Enlace Guifo</button>
+                        <button type="submit" id="download">Descargar Guifo</button>
+                    </div>
+                    <div class="second-button">
+                        <button type="submit" id="done"><a href="examplertcvideo.html" id="text-begin">Listo</a></button>
+                    </div>   
+                </form>    
+            </div>
+        </div>
+        
+        <div class="container_upload_gif">
+            <div class="bar_create_upload_gif">
+              <span>Subiendo Guifo</span>
+              <img src="assets2/button3.svg" alt="close">
+            </div>
+            <div class="container_upload_world_gif">
+              <img src="assets2/globe_img.png" alt="world" class="world">
+              <p class="subiendo_guifo">Estamos subiendo tu guifo…</p>
+              <div class="accountant">
+                <div class="block-one"></div>
+                <div id="5" class="block-two"></div>
+                <div id="6" class="block-two"></div>
+                <div id="7" class="block-two"></div>
+                <div id="8" class="block-two"></div>
+                <div id="9" class="block-two"></div>
+                <div id="10" class="block-two"></div>
+                <div id="11" class="block-two"></div>
+                <div id="12" class="block-two"></div>
+                <div id="13" class="block-two"></div>
+                <div id="14" class="block-two"></div>
+                <div id="15" class="block-two"></div>
+                <div id="16" class="block-two"></div>
+                <div id="17" class="block-two"></div>
+                <div id="18" class="block-two"></div>
+                <div id="19" class="block-two"></div>
+                <div id="20" class="block-two"></div>
+                <div id="21" class="block-two"></div>
+                <div id="22" class="block-two"></div>
+                <div id="23" class="block-two"></div>
+                <div id="24" class="block-two"></div>
+                <div id="25" class="block-two"></div>
+                <div id="26" class="block-two"></div>
+              </div>
+              <p class="time">Tiempo restante: <span class="line2"></span><span class="line3"></span> minutos</p>
+            </div>
+            <form method="get" action="index.html"><button type="submit" class="cancel2">Cancelar</button></form>
+          </div>
+        
+        <div class="gifs_results_container" id="mygifs">
+            <div class="first-section">
+                <p id="title-one">Mis guifos</p>
+            </div> 
+        <div id="results-trends" class="results-gifs">
+           
+        </div>
+        </div>
+        <div id="results_guifo">
+            
+        </div>
+    </main>
+</body>
+<script src="https://www.webrtc-experiment.com/common.js"></script>
+<script src="/RecordRTC.js"></script>
+<script src="https://www.webrtc-experiment.com/gif-recorder.js"></script>
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+<script src="scripts/video.js"></script>
+</html>
+
